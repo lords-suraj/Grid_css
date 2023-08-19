@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 3</title>
+</head>
+<style>
+    *{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+       margin-left: 50px;
+       margin-right: 50px;
+       
+     
+    }
+    img{
+        width: 60vw;
+        height: 100vh;
+        
+    }
+    .text {
+        margin-top: 50%;
+        margin-right: 80px;
+        margin-left: 30px;
+    }
+    button{
+        background-color: black;
+        color: white;
+        padding: 10px;
+        width: 130px;
+
+    }
+    button:hover{
+        background-color: rgb(186, 251, 251);
+        color: black;
+        font-style: bolder;
+    }
+    .nav{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        text-align: center;
+        
+    }
+    .logo img{
+        width: 50px;
+        height: 50px;
+        margin-left: -190px;
+    }
+    .main a{
+        padding: 20px;
+        color: black;
+        font-style: none;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: bolder;
+    }
+    .main a:hover{
+        color: lime;
+        font-weight: bolder;
+    }
+    .nav button{
+        background-color:lime;
+        color: black;
+        height: 40px;
+        width: 150px;
+        font-size: 15px;
+        font-style: bolder;
+        font-weight: 500;
+        margin-left: 60%;
+        border-radius: 10px;
+    }
+    .swiggy{
+        background-color: #2B1E16;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        margin-left: 50px;
+        margin-right: 50px;
+       justify-content: space-around; 
+    }
+    .swiggy img{
+        height: 200px;
+        width: 100px;
+        margin-left: 180px;
+    }
+    .swigy1{
+        display: grid;
+        justify-content: space-around; 
+    }
+    .swigy1  .main{
+     font-size: 25px;
+     font-weight: bolder;
+     color: white;
+     text-align: center;
+    }
+    .swigy1  .txt{
+        font-size: 15px;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-top: -20px;
+        color: white;
+        text-align: center;
+       }
+    .swigy2  .main{
+     font-size: 25px;
+     font-weight: bolder;
+     color: white;
+     text-align: center;
+    }
+    .swigy2  .txt{
+        font-size: 15px;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-top: -20px;
+        color: white;
+        text-align: center;
+       }
+    .swigy3  .main{
+     font-size: 25px;
+     font-weight: bolder;
+     color: white;
+     text-align: center;
+    }
+    .swigy3  .txt{
+        font-size: 15px;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-top: -20px;
+        color: white;
+        text-align: center;
+       }
+</style>
+<body>
+    <div class="nav">
+        <div class="logo">
+            <img src="logo.png" alt="logo">
+        </div>
+        <div class="main">
+          <a href="#">Home</a>  
+<a href="#">About</a>
+          <a href="#">contact</a>  
+        </div>
+        <button>
+            Login
+        </button>
+    </div>
+    <div class="container">
+        <div class="text">
+            <h1>Healthy Food</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore voluptas veniam, tempore modi libero quisquam iusto facere magnam nam eveniet delectus iure consequatur reiciendis porro autem error, mollitia corporis earum ratione sit dolore harum. Suscipit fugit tenetur distinctio repudiandae. Fugit esse cumque eum quibusdam iure fugiat molestiae doloribus quis harum minus unde aut officiis quisquam, repudiandae nihil a accusamus aliquid?</p>
+            <button>Read More</button>
+        </div>
+        <div class="image">
+            <img src="veg.jpg">
+        </div>
+    </div>
+    <!-- swiggy section -->
+    <div class="swiggy">
+        <div class="swigy1"><img src="swiggy1.png" alt="img">
+        <p class="main">No Minimum Order</p>
+    <p class="txt">Order in for yourself or for the group, with no restrictions on order value</p></div>
+
+        <div class="swigy2"><img src="swiggy2.png" alt="img">
+        <p class="main">Live Order Tracking</p>
+    <p class="txt">Know where your order is at all times, from the restaurant to your doorstep</p></div>
+
+        <div class="swigy3"><img src="swiggy3.png" alt="img">
+        <p class="main">Lightning-Fast Delivery</p>
+    <p class="txt">Experience Swiggy's superfast delivery for food delivered fresh & on time</p></div>
+    </div>
+</body>
+</html>

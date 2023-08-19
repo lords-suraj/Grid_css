@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .timetable{
+        display: grid;
+        grid-template-columns: repeat(8,1fr);
+        border: 3px solid black;
+        padding: 10px;
+        background-color: #5da3fa;
+    }
+    .row-1 {
+        font-weight: bold;
+        font-size: large;
+        padding: 40px 0px 40px 0px ;
+        background-color: #ff6666;
+      }
+    div {
+        padding: 20px 5px;
+        border: 2px dotted black;
+        text-align: center;
+        background-color: #1cfafa;
+      }
+      .text-bold{
+        font-weight: bold;
+        background-color: purple;
+      }
+      .col-span-2-end {
+        grid-column-start: 7;
+        grid-column-end: 9;
+        background-color: #a6b9ce;
+      }
+
+      .col-span-2-start {
+        grid-column-start: 2;
+        grid-column-end: 4;
+        background-color: rgb(203, 200, 200);
+      }
+
+      .lunch {
+        border: 0px;
+        background-color:yellow;
+        font-weight: bold;
+        font-size: larger;
+      }
+
+      .text-green {
+        background-color: rgb(45, 189, 45);
+        font-weight: bold;
+        font-size: larger;
+      }
+</style>
+<body>
+    <h1>School Timetable</h1>
+    <div class="timetable">
+      <div class="row-1">TIME</div>
+      <div class="row-1">08:00 AM - 09:00 AM</div>
+      <div class="row-1">09:00 AM - 10:00 AM</div>
+      <div class="row-1">10:00 AM - 11:00 AM</div>
+      <div class="row-1">11:00 AM - 12:00 PM</div>
+      <div class="row-1">12:00 PM - 02:00 PM</div>
+      <div class="row-1">02:00 PM - 03:00 PM</div>
+      <div class="row-1">03:00 PM - 04:00 PM</div>
+
+      <div class="text-bold">Monday</div>
+      <div>English</div>
+      <div>Biology</div>
+      <div>Physics</div>
+      <div>Chemistry</div>
+      <div class="lunch">L</div>
+      <div class="col-span-2-end">Chemistry LAB</div>
+
+      <div class="text-bold">Tuesday</div>
+      <div class="col-span-2-start">Biology LAB</div>
+      <div>Physics</div>
+      <div>Chemistry</div>
+      <div class="lunch">U</div>
+      <div>English</div>
+      <div>Biology</div>
+
+      <div class="text-bold">Wednesday</div>
+      <div>English</div>
+      <div>Biology</div>
+      <div>Physics</div>
+      <div>Chemistry</div>
+      <div class="lunch">N</div>
+      <div class="col-span-2-end text-green">Games</div>
+
+      <div class="text-bold">Thursday</div>
+      <div class="col-span-2-start">Biology LAB</div>
+      <div>Physics</div>
+      <div>Chemistry</div>
+      <div class="lunch">C</div>
+      <div>English</div>
+      <div>Biology</div>
+
+      <div class="text-bold">Friday</div>
+      <div>English</div>
+      <div>Biology</div>
+      <div>Physics</div>
+      <div>Chemistry</div>
+      <div class="lunch">H</div>
+      <div class="col-span-2-end">Physics Lab</div>
+
+      <div class="text-bold">Saturday</div>
+      <div class="col-span-2-start">Biology LAB</div>
+      <div>Physics</div>
+      <div>Chemistry</div>
+      <div class="lunch">Break</div>
+      <div class="col-span-2-end text-green">LET OFF</div>
+    </div>
+</body>
+</html>
